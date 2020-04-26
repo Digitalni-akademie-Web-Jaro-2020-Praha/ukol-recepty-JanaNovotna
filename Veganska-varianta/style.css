@@ -1,7 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
 
+html {
+    box-sizing: border-box;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
 
 /* -------------------------------------------------- */
 
@@ -16,7 +21,6 @@ notebook/pc:
 @media (min-width: 860px) {
 }
 */
-
 
 body {
     margin: 0;
@@ -33,8 +37,125 @@ body {
     color: silver;
 }
 
-
 /* ------------------------------- */
+
 /* ----- DOLE BUDE TVOJE CSS ----- */
+
 /* ------------------------------- */
 
+body {
+    color: #fff;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    margin: 0;
+}
+
+.recept1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/chlebicek.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.recept2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/cizrna.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.recept3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/tacos.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.recept4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/burger.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.recepty {
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+}
+
+.hlavni-recept {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/salat.jpg');
+    background-position: center center;
+    background-size: cover;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.maly-recept {
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.kategorie {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 480px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .dalsi-recepty {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hlavni-recept {
+        min-height: 250px;
+        padding: 20px;
+    }
+    .maly-recept {
+        flex: 1 0 50%;
+        min-height: 150px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 860px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .recepty {
+        flex-direction: row;
+    }
+    .hlavni-recept {
+        min-height: 400px;
+    }
+    .maly-recept {
+        min-height: 200px;
+    }
+}
